@@ -24,16 +24,17 @@
 ```
 
 # API
-* OpenSerial Open
-* WriteSerialByte 写入数据
-* ReadSerial 读取数据
-* ReadSerialString 读取数据（字符串）
-* writeThenRead 读写串口
-* resetParam 重设参数
-* CloseSerial 关闭串口
-* clearPortBuf 清除缓存
+* OpenSerial 
+* WriteSerialByte 
+* ReadSerial 
+* ReadSerialString 
+* writeThenRead 
+* resetParam 
+* CloseSerial 
+* clearPortBuf 
 
-*-----
+## -------------------------------------------------------------------------------------------------------------------------------------
+### OpenSerial
 | FUNCTION PROTOTYPE | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
 | :----------------: |:-------------------------------------------------------------------------:|
 | FUNCTION PROTOTYPE PROTOTYPE| void OpenSerial(String dev, int brd) throws SecurityException，IOException |
