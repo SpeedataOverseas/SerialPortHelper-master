@@ -39,3 +39,6 @@
 | :----------------: |:-------------------------------------------------------------------------:|
 | Functional description | Open serial port: data bit, 8bit; stop bit, 1; no parity bit; |
 | Parameter Description  | String dev,Serial port number; |
+| Parameter Description  | int brd,Baud rate; |
+| Return value | None |
+
