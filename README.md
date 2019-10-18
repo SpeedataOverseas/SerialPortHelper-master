@@ -36,10 +36,8 @@
 ###
 
 * OpenSerial 
-姓名|技能|排行
---|:--:
-FUNC
-PROTOTYPE|void OpenSerial(String dev, int brd) throws SecurityException，IOException
-FUNC
-DESCRIPTION|Open serial port: data bit, 8bit; stop bit, 1; no parity bit;
-PARAMETER DESCRIPTION|String dev,Serial port number;
+| 姓名 | 技能 |
+| :----------------: |:-------------------------------------------------------------------------:|
+| FUNC PROTOTYPE| void OpenSerial(String dev, int brd) throws SecurityException，IOException |
+| FUNC DESCRIPTION | Open serial port: data bit, 8bit; stop bit, 1; no parity bit; |
+| PARAMETER DESCRIPTION | String dev,Serial port number; |
