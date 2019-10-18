@@ -33,8 +33,7 @@
 * CloseSerial 关闭串口
 * clearPortBuf 清除缓存
 
-## -------
-
+*-----
 | FUNCTION PROTOTYPE | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
 | :----------------: |:-------------------------------------------------------------------------:|
 | FUNCTION PROTOTYPE PROTOTYPE| void OpenSerial(String dev, int brd) throws SecurityException，IOException |
