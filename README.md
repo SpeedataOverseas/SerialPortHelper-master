@@ -24,11 +24,11 @@
 ```
 
 # API
-> OpenSerial 打开串口
-> WriteSerialByte 写入数据
-> ReadSerial 读取数据
-> ReadSerialString 读取数据（字符串）
-> writeThenRead 读写串口
-> resetParam 重设参数
-> CloseSerial 关闭串口
-> clearPortBuf 清除缓存
+	> OpenSerial 打开串口
+	> WriteSerialByte 写入数据
+	> ReadSerial 读取数据
+	> ReadSerialString 读取数据（字符串）
+	> writeThenRead 读写串口
+	> resetParam 重设参数
+	> CloseSerial 关闭串口
+	> clearPortBuf 清除缓存
