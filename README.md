@@ -34,7 +34,7 @@
 * clearPortBuf 清除缓存
 
 ### 说明
-* OpenSerial 
+
 | FUNC PROTOTYPE | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
 | :----------------: |:-------------------------------------------------------------------------:|
 | FUNC PROTOTYPE| void OpenSerial(String dev, int brd) throws SecurityException，IOException |
