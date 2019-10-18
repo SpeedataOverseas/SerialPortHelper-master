@@ -140,7 +140,8 @@
 | Parameter Description  | int fd, Serial port handle; |
 | Return value | None |
 * * *
-
+* * *
+* * *
 # DeviceControl(GPIO) API
 * Constructor
 * Power-on
@@ -171,6 +172,7 @@
 * Code example
 ```Motherboard(KT) opens multiple GPIOs;
   {
+  //Motherboard(KT) opens multiple GPIOs;
         try {
                 DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.MAIN, 93, 94);
                 deviceControl.PowerOnDevice();
@@ -183,6 +185,7 @@
 * * *
 ```Mtherboard(SD) opens multiple GPIOs;
   {
+  //Mtherboard(SD) opens multiple GPIOs;
         try {
                 DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.NEW_MAIN, 16, 46);
                 deviceControl.PowerOnDevice();
@@ -195,6 +198,7 @@
 * * *
 ```Back clip(EM55) opens multiple GPIOs;
   {
+  //Back clip(EM55) opens multiple GPIOs;
         try {
                 DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.EXPAND, 1, 2, 3);
                 deviceControl.PowerOnDevice();
@@ -207,6 +211,7 @@
 * * *
 ```Back clip(SK80) opens multiple GPIOs;
   {
+  //Back clip(SK80) opens multiple GPIOs;
         try {
                 DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.EXPAND2, 1, 2, 3);
                 deviceControl.PowerOnDevice();
@@ -219,6 +224,7 @@
 * * *
 ```Motherboard & Back Clip(KT55+EM55) Open Multiple GPIOs;"93" is the main board, and "1, 2, 3" is the back clip;
   {
+  //Motherboard & Back Clip(KT55+EM55) Open Multiple GPIOs;"93" is the main board, and "1, 2, 3" is the back clip;
    try {
             DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.MAIN_AND_EXPAND, 93, 1,2,3);
             deviceControl.PowerOnDevice();
@@ -231,6 +237,7 @@
 * * *
 ```Motherboard & Back Clip(SK80) Open Multiple GPIOs;"93" is the main board, and "1, 2, 3" is the back clip;
   {
+  //Motherboard & Back Clip(SK80) Open Multiple GPIOs;"93" is the main board, and "1, 2, 3" is the back clip;
    try {
             DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.MAIN_AND_EXPAND2, 93, 1,2,3);
             deviceControl.PowerOnDevice();
@@ -239,6 +246,7 @@
             e.printStackTrace();
         }
   }
+```
 ```
 
 
