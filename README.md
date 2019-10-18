@@ -33,10 +33,9 @@
 * CloseSerial 关闭串口
 * clearPortBuf 清除缓存
 
-###
-
+### 说明
 * OpenSerial 
-| 姓名 | 技能 |
+| FUNC PROTOTYPE | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
 | :----------------: |:-------------------------------------------------------------------------:|
 | FUNC PROTOTYPE| void OpenSerial(String dev, int brd) throws SecurityException，IOException |
 | FUNC DESCRIPTION | Open serial port: data bit, 8bit; stop bit, 1; no parity bit; |
