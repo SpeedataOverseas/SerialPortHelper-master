@@ -24,7 +24,7 @@
 ```
 
 # API
-* OpenSerial 打开串口
+* OpenSerial Open
 * WriteSerialByte 写入数据
 * ReadSerial 读取数据
 * ReadSerialString 读取数据（字符串）
