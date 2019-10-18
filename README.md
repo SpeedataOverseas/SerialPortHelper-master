@@ -8,6 +8,7 @@
 
 ### Add the following to the project's build.gradle
 ```
+{
 	allprojects {
         repositories {
             ...
