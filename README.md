@@ -33,7 +33,7 @@
 * CloseSerial 
 * clearPortBuf 
 
-*** --- __
+* * *
 ### OpenSerial
 | FUNCTION PROTOTYPE | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
 | :----------------: |:-------------------------------------------------------------------------:|
