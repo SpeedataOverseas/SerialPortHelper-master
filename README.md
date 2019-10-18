@@ -35,8 +35,7 @@
 
 * * *
 ### OpenSerial
-| FUNCTION PROTOTYPE | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
+| Function prototype | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
 | :----------------: |:-------------------------------------------------------------------------:|
-| FUNCTION PROTOTYPE | void OpenSerial(String dev, int brd) throws SecurityException，IOException |
-| FUNCTION PROTOTYPE DESCRIPTION | Open serial port: data bit, 8bit; stop bit, 1; no parity bit; |
-| PARAMETER DESCRIPTION | String dev,Serial port number; |
+| Functional description | Open serial port: data bit, 8bit; stop bit, 1; no parity bit; |
+| Parameter Description  | String dev,Serial port number; |
