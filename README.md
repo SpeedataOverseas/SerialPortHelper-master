@@ -23,7 +23,7 @@
     }
 ```
 
-# API
+# Serial port API
 * OpenSerial 
 * WriteSerialByte 
 * ReadSerial 
@@ -139,9 +139,106 @@
 | Functional description | Close the serial port fd; |
 | Parameter Description  | int fd, Serial port handle; |
 | Return value | None |
+* * *
 
+# DeviceControl(GPIO) API
+* Constructor
+* Power-on
+* Set gpio
+* Power off
 
-
-
+* * *
+### DeviceControl.PowerType
+| Type | Description |
+| :----------------: |:-------------------------------------------------------------------------:|
+| MAIN | Motherboard control(KT40/KT50/KT55/KT80); |
+| EXPAND | Back clip control(EM55); |
+| MAIN_AND_EXPAND | Motherboard & Back Clip Control（KT55+EM55); |
+| NEW_MAIN | Motherboard control(SD55/SD60/SD80/SD100); |
+| EXPAND2 | Back clip control(SK80) |
+| MAIN_AND_EXPAND2 | Motherboard & Back Clip Control（SK80) |
+| GAOTONG_MAIN | Qualcomm |
+* * *
+### Constructor
+| Function prototype | DeviceControl(PowerType power_type, int… gpios) throws IOException |
+| :----------------: |:-------------------------------------------------------------------------:|
+| Functional description | Device power-on control; |
+| Parameter Description  | PowerType power_type,Select the type of device; |
+| Parameter Description  | int… gpios,The motherboard parameters are in front and the back clip parameters are in the back; |
+| Return value | DeviceControl; |
+### Constructor(Qualcomm)
+* * *
+* Code example
+```Motherboard(KT) opens multiple GPIOs;
+  {
+        try {
+                DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.MAIN, 93, 94);
+                deviceControl.PowerOnDevice();
+                deviceControl.PowerOffDevice();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+  }
+```
+* * *
+```Mtherboard(SD) opens multiple GPIOs;
+  {
+        try {
+                DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.NEW_MAIN, 16, 46);
+                deviceControl.PowerOnDevice();
+                deviceControl.PowerOffDevice();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+  }
+```
+* * *
+```Back clip(EM55) opens multiple GPIOs;
+  {
+        try {
+                DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.EXPAND, 1, 2, 3);
+                deviceControl.PowerOnDevice();
+                deviceControl.PowerOffDevice();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+  }
+```
+* * *
+```Back clip(SK80) opens multiple GPIOs;
+  {
+        try {
+                DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.EXPAND2, 1, 2, 3);
+                deviceControl.PowerOnDevice();
+                deviceControl.PowerOffDevice();
+            } catch (IOException e) {
+            e.printStackTrace();
+            }
+  }
+```
+* * *
+```Motherboard & Back Clip(KT55+EM55) Open Multiple GPIOs;"93" is the main board, and "1, 2, 3" is the back clip;
+  {
+   try {
+            DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.MAIN_AND_EXPAND, 93, 1,2,3);
+            deviceControl.PowerOnDevice();
+            deviceControl.PowerOffDevice();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+  }
+```
+* * *
+```Motherboard & Back Clip(SK80) Open Multiple GPIOs;"93" is the main board, and "1, 2, 3" is the back clip;
+  {
+   try {
+            DeviceControl deviceControl = new DeviceControl(DeviceControl.PowerType.MAIN_AND_EXPAND2, 93, 1,2,3);
+            deviceControl.PowerOnDevice();
+            deviceControl.PowerOffDevice();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+  }
+```
 
 
