@@ -153,10 +153,10 @@
 ### DeviceControl.PowerType
 | Type | Description |
 | :----------------: |:-------------------------------------------------------------------------:|
-| MAIN | Motherboard control(KT40/KT50/KT55/KT80); |
+| MAIN | Motherboard control(KT40/KT50/KT55/KT80/SD80(MT6753); |
 | EXPAND | Back clip control(EM55); |
 | MAIN_AND_EXPAND | Motherboard & Back Clip Control（KT55+EM55); |
-| NEW_MAIN | Motherboard control(SD55/SD60/SD80/SD100); |
+| NEW_MAIN | Motherboard control(SD55/SD60/SD80T(MT6763)/SD100); |
 | EXPAND2 | Back clip control(SK80) |
 | MAIN_AND_EXPAND2 | Motherboard & Back Clip Control（SK80) |
 | GAOTONG_MAIN | Qualcomm |
